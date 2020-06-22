@@ -2,12 +2,16 @@
 # Uses Request and BS4
 # note: Alpha = left = top of stat board
 #       Bravo = right = bottom of stat board
+from typing import BinaryIO
+
 import requests
 from bs4 import BeautifulSoup
 import re
+import csv
+
 # Using request module, we use the get function provided
 # provided to access the web page
-url = "https://siege.gg/matches/100"
+url = "https://siege.gg/matches/3859"
 page = requests.get(url)
 
 # print(result.status_code)
@@ -23,12 +27,32 @@ teamBScore = ' '.join(teamBScoreHTML.text.split())
 tASInt = int(re.sub('\D', '', teamAScore).strip())
 tBSInt = int(re.sub('\D', '', teamBScore).strip())
 
-if tASInt > tBSInt:
-    alphaWin = 1
-else:
-    alphaWin = 0
+tableClass = Soup.find('div', {"class": "row row--padded match__player-stats"})
+table = tableClass.find("table")
 
-print(alphaWin)
+print(table)
+import pdb;pdb.set_trace()
+output_rows = []
+for table_row in table.findAll('tr'):
+    columns = table_row.findAll('td')
+    output_row = []
+    for column in columns:
+        output_row.append(column.text)
+    output_rows.append(output_row)
+
+
+with open('output.csv', 'wb') as csvfile:
+    writer = csv.write(csvfile)
+    writer.writerows(output_rows)
+
+# if tASInt > tBSInt:
+# alphaWin = 1
+# betaWin = 0
+# else:
+# alphaWin = 0
+# betaWin = 1
+
+# print("Team A win = " + repr(alphaWin) + "\nTeam B win = " + repr(betaWin))
 
 # print(tASInt)
 # print(tBSInt)
