@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import csv
-
+# TODO: CSV writes properly, need to add Win/lose functionality
 # Using request module, we use the get function provided
 # provided to access the web page
 url = "https://siege.gg/matches/3859"
@@ -29,6 +29,8 @@ tBSInt = int(re.sub('\D', '', teamBScore).strip())
 
 tableClass = Soup.find('div', {"class": "row row--padded match__player-stats"})
 table = tableClass.find("table")
+print("team Alpha score" , tASInt)
+print("team Beta score" , tBSInt)
 
 # Finds all rows and adds to outputrows array
 output_rows = []
@@ -40,6 +42,7 @@ for table_row in table.findAll('tr'):
     output_rows.append(output_row)
 # Removes the Empty value
 output_rows.pop(0)
+
 
 with open('output.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
