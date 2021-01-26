@@ -24,13 +24,30 @@ teamBScoreHTML = Soup.find('div', class_='col-12 col-md match__overview align-se
 teamAScore = ' '.join(teamAScoreHTML.text.split())
 teamBScore = ' '.join(teamBScoreHTML.text.split())
 # filters the names of the teams out
-tASInt = int(re.sub('\D', '', teamAScore).strip())
-tBSInt = int(re.sub('\D', '', teamBScore).strip())
+teamAlphaScoreInt = int(re.sub('\D', '', teamAScore).strip())
+teamBetaScoreInt = int(re.sub('\D', '', teamBScore).strip())
 
 tableClass = Soup.find('div', {"class": "row row--padded match__player-stats"})
 table = tableClass.find("table")
-print("team Alpha score" , tASInt)
-print("team Beta score" , tBSInt)
+
+print("Team Alpha Score: ") 
+print(teamAlphaScoreInt)
+print("Team Beta Score: ")
+print(teamBetaScoreInt)
+
+if teamAlphaScoreInt > teamBetaScoreInt:
+    TeamAWin = 1
+    TeamBwin = 0
+    draw = 0
+elif teamBetaScoreInt > teamAlphaScoreInt:
+    TeamBwin = 1
+    TeamAwin = 0
+    draw = 0
+else:
+    Draw = 1
+
+
+
 
 # Finds all rows and adds to outputrows array
 output_rows = []
@@ -43,10 +60,24 @@ for table_row in table.findAll('tr'):
 # Removes the Empty value
 output_rows.pop(0)
 
+if TeamAWin == 1 and TeamBwin == 0 and draw == 0:
+    print("team A wins")
+elif TeamAWin == 0 and TeamBwin == 1 and draw == 0:
+    print("team B wins")
+else:
+    print("its a draw")
 
-with open('output.csv', 'wb') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerows(output_rows)
+print("\nRow data is: ")
+for row in output_rows:
+    for val in row:
+        print '{:4}'.format(val),
+    print
+
+
+#Uncomment when done with rest of code/change so that it adds to csv rather than overwrites
+#with open('output.csv', 'wb') as csvfile:
+    #writer = csv.writer(csvfile)
+    #writer.writerows(output_rows)
 
 # if tASInt > tBSInt:
 # alphaWin = 1
