@@ -27,18 +27,11 @@ teamBScore = ' '.join(teamBScoreHTML.text.split())
 teamAlphaScoreInt = int(re.sub('\D', '', teamAScore).strip())
 teamBetaScoreInt = int(re.sub('\D', '', teamBScore).strip())
 
+
 tableClass = Soup.find('div', {"class": "row row--padded match__player-stats"})
 table = tableClass.find("table")
 
-print("Team Alpha Score: ") 
-print(teamAlphaScoreInt)
-print("Team Beta Score: ")
-print(teamBetaScoreInt)
-
-
-
-
-
+print("\nFound match data, Writing to csv")
 
 # Finds all rows and adds to outputrows array
 output_rows = []
@@ -63,7 +56,7 @@ else:
 
 
 if TeamAWin == 1 and TeamBwin == 0 and draw == 0:
-    print("team A wins")
+   # print("team A wins")
     #Updating Winners and losers if team A wins
     player1data = output_rows[0]
     player1data.append("Win")
@@ -86,7 +79,7 @@ if TeamAWin == 1 and TeamBwin == 0 and draw == 0:
     player10data = output_rows[9]
     player10data.append("Loss")
 elif TeamAWin == 0 and TeamBwin == 1 and draw == 0:
-    print("team B wins")
+   # print("team B wins")
     player1data = output_rows[0]
     player1data.append("Loss")
     player2data = output_rows[1]
@@ -108,7 +101,7 @@ elif TeamAWin == 0 and TeamBwin == 1 and draw == 0:
     player10data = output_rows[9]
     player10data.append("Win")
 else:
-    print("its a draw")
+    #print("its a draw")
     player1data = output_rows[0]
     player1data.append("Draw")
     player2data = output_rows[1]
@@ -132,27 +125,41 @@ else:
 
 #print("\nRow 1 data is")
 #print(output_rows[0][1])
+matchMaps = Soup.find_all('td', class_='ban__map')
+matchrow = []
+for matchmap in matchMaps:
+    matchrow.append(matchmap.text)
 
-print("\nRow data is: ")
-for row in output_rows:
-    for val in row:
-        print '{:4}'.format(val),
-    print
+PlayedMap = matchrow[6]
 
+player1data = output_rows[0]
+player1data.append(PlayedMap)
+player2data = output_rows[1]
+player2data.append(PlayedMap)
+player3data = output_rows[2]
+player3data.append(PlayedMap)
+player4data = output_rows[3]
+player4data.append(PlayedMap)
+player5data = output_rows[4]
+player5data.append(PlayedMap)
+player6data = output_rows[5]
+player6data.append(PlayedMap)
+player7data = output_rows[6]
+player7data.append(PlayedMap)
+player8data = output_rows[7]
+player8data.append(PlayedMap)
+player9data = output_rows[8]
+player9data.append(PlayedMap)
+player10data = output_rows[9]
+player10data.append(PlayedMap)
+
+#print("\nRow data is: ")
+#for row in output_rows:
+    #for val in row:
+       # print '{:4}'.format(val),
+  #  print
 
 #Uncomment when done with rest of code/change so that it adds to csv rather than overwrites
-#with open('output.csv', 'wb') as csvfile:
-    #writer = csv.writer(csvfile)
-    #writer.writerows(output_rows)
-
-# if tASInt > tBSInt:
-# alphaWin = 1
-# betaWin = 0
-# else:
-# alphaWin = 0
-# betaWin = 1
-
-# print("Team A win = " + repr(alphaWin) + "\nTeam B win = " + repr(betaWin))
-
-# print(tASInt)
-# print(tBSInt)
+with open('output.csv', 'ab') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(output_rows)
