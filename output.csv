@@ -1,10 +1,50 @@
-  RaFaLe ,0.78,4-5 (-1),0-1 (-1),55%,0.36,55%,0,0, 75% ,  Nomad ,  Smoke ,367,Win,Consulate
-  BriD ,0.98,5-6 (-1),0-0 (+0),73%,0.45,45%,0,1, 40% ,  Thermite ,  Maestro ,367,Win,Consulate
-  Renshiro ,1.38,10-4 (+6),2-0 (+2),82%,0.91,64%,0,1, 44% ,  Zofia ,  Mute ,367,Win,Consulate
-  Elemzje ,0.91,8-9 (-1),0-1 (-1),55%,0.73,18%,0,0, 57% ,  Sledge ,  Vigil ,367,Win,Consulate
-  Falko ,0.33,1-10 (-9),1-3 (-2),27%,0.09,9%,0,1, 100% ,  Maverick ,  Pulse ,428,Win,Consulate
-  Shaiiko ,1.55,15-6 (+9),4-3 (+1),73%,1.36,45%,0,0, 53% ,  Hibana ,  Jager ,367,Loss,Consulate
-  Whiteshark67 ,1.06,9-8 (+1),1-0 (+1),64%,0.82,27%,0,0, 67% ,  Hibana ,  Maestro ,428,Loss,Consulate
-  Aurel ,0.72,4-8 (-4),0-0 (+0),45%,0.36,27%,0,1, 0% ,  Ash ,  Mute ,428,Loss,Consulate
-  DaReeal ,0.63,5-9 (-4),3-3 (+0),45%,0.45,18%,0,0, 20% ,  Nomad ,  Jager ,428,Loss,Consulate
-  Prime ,1.18,11-7 (+4),0-0 (+0),73%,1.00,36%,0,0, 40% ,  Buck ,  Mozzie ,428,Loss,Consulate
+  Bryan ,0.93,9-9 (+0),1-2 (-1),57%,0.64,36%,0,0,22%,  Hibana ,  Smoke ,10,Win,Oregon
+  Easilyy ,1.31,14-8 (+6),0-2 (-2),79%,1,43%,0,0,50%,  Lion ,  Pulse ,10,Win,Oregon
+  Slashug ,1.37,15-7 (+8),2-2 (+0),64%,1.07,50%,0,3,60%,  Jackal ,  Rook ,10,Win,Oregon
+  Ecl9pse ,0.79,10-14 (-4),0-4 (-4),64%,0.71,0%,0,0,67%,  Sledge ,  Bandit ,10,Win,Oregon
+  geoo ,1.18,9-6 (+3),1-0 (+1),86%,0.64,57%,1,0,78%,  Buck ,  Mira ,10,Win,Oregon
+  Chala ,1,10-11 (-1),1-1 (+0),64%,0.71,21%,0,2,44%,  Thermite ,  Smoke ,16,Loss,Oregon
+  daave ,0.8,8-12 (-4),3-0 (+3),57%,0.57,14%,0,0,63%,  Lion ,  Bandit ,16,Loss,Oregon
+  ThinkingNade ,1.25,14-9 (+5),3-1 (+2),71%,1,36%,0,0,33%,  Buck ,  Mute ,16,Loss,Oregon
+  Trippen ,0.9,10-12 (-2),3-0 (+3),50%,0.71,14%,0,1,60%,  Ash ,  Mira ,16,Loss,Oregon
+  Redeemer ,0.3,2-13 (-11),0-2 (-2),29%,0.14,7%,0,0,50%,  Lion ,  Lesion ,16,Loss,Oregon
+  Necrox ,0.96,8-9 (-1),0-1 (-1),57%,0.57,36%,0,2,25%,  Glaz ,  Smoke ,9,Win,Border
+  Yung ,1.3,12-6 (+6),1-2 (-1),71%,0.86,57%,0,1,17%,  Hibana ,  Smoke ,9,Win,Border
+  BC ,0.77,5-9 (-4),0-1 (-1),57%,0.36,36%,1,0,80%,  Lion ,  Mira ,9,Win,Border
+  nvK ,1.38,16-9 (+7),1-1 (+0),79%,1.14,36%,0,0,50%,  Zofia ,  Vigil ,9,Win,Border
+  Canadian ,1,11-10 (+1),4-3 (+1),50%,0.79,29%,0,1,60%,  Buck ,  Pulse ,9,Win,Border
+  Ad9m ,1.05,12-10 (+2),3-2 (+1),43%,0.86,29%,0,0,67%,  Thermite ,  Rook ,15,Loss,Border
+  Mint ,0.57,6-11 (-5),0-2 (-2),36%,0.43,21%,0,0,33%,  Glaz ,  Mira ,15,Loss,Border
+  Hotancold ,0.67,7-13 (-6),3-2 (+1),57%,0.5,7%,0,0,57%,  Buck ,  Doc ,15,Loss,Border
+  Jarvis ,1.22,11-8 (+3),2-0 (+2),79%,0.79,43%,0,2,30%,  Sledge ,  Pulse ,15,Loss,Border
+  Pojoman ,0.8,7-11 (-4),0-0 (+0),57%,0.5,21%,0,1,14%,  Hibana ,  Smoke ,15,Loss,Border
+  Beastly ,1.12,17-18 (-1),1-0 (+1),83%,0.74,22%,0,3,27%,  Lion ,  Pulse ,12,Win,Consulate
+  Vandal ,1.23,19-12 (+7),3-2 (+1),70%,0.83,48%,1,1,41%,  Thermite ,  Smoke ,12,Win,Consulate
+  Mark ,0.79,13-19 (-6),3-4 (-1),61%,0.57,17%,0,0,50%,  Lion ,  Castle ,12,Win,Consulate
+  Neptunez ,0.91,14-18 (-4),0-1 (-1),70%,0.61,22%,0,1,62%,  Hibana ,  Echo ,12,Win,Consulate
+  VertcL ,1.01,18-16 (+2),3-6 (-3),57%,0.78,30%,1,1,47%,  Hibana ,  Pulse ,12,Win,Consulate
+  Ad9m ,1.06,17-18 (-1),3-3 (+0),74%,0.74,22%,0,2,53%,  Zofia ,  Echo ,15,Loss,Consulate
+  Mint ,0.89,12-16 (-4),2-1 (+1),61%,0.52,30%,1,1,25%,  Blitz ,  Bandit ,15,Loss,Consulate
+  Hotancold ,1.19,23-18 (+5),6-2 (+4),74%,1,22%,1,0,55%,  Lion ,  Valkyrie ,15,Loss,Consulate
+  Jarvis ,1.09,17-14 (+3),2-1 (+1),74%,0.74,39%,0,0,60%,  Buck ,  Vigil ,15,Loss,Consulate
+  Pojoman ,0.91,13-15 (-2),0-3 (-3),61%,0.57,35%,0,3,38%,  Thermite ,  Mira ,15,Loss,Consulate
+  Benji ,0.86,15-20 (-5),0-2 (-2),68%,0.54,29%,1,0,36%,  Lion ,  Bandit ,13,Win,Consulate
+  MahMan ,1.16,24-20 (+4),6-5 (+1),79%,0.86,29%,0,0,61%,  Buck ,  Smoke ,13,Win,Consulate
+  Bosco ,1.08,25-21 (+4),4-4 (+0),61%,0.89,25%,1,0,32%,  Sledge ,  Smoke ,13,Win,Consulate
+  Krazy ,1.11,20-17 (+3),2-1 (+1),71%,0.71,39%,1,3,30%,  Hibana ,  Castle ,13,Win,Consulate
+  gurmy ,0.89,14-21 (-7),1-2 (-1),64%,0.5,25%,0,6,27%,  Thermite ,  Mira ,13,Win,Consulate
+  Chala ,1.03,20-21 (-1),6-1 (+5),75%,0.71,25%,1,1,30%,  Thermite ,  Smoke ,16,Loss,Consulate
+  daave ,0.69,12-22 (-10),2-4 (-2),50%,0.43,21%,0,0,58%,  Lion ,  Jager ,16,Loss,Consulate
+  ThinkingNade ,0.99,19-18 (+1),0-4 (-4),61%,0.68,36%,0,2,41%,  Buck ,  Pulse ,16,Loss,Consulate
+  Trippen ,1.11,25-22 (+3),3-4 (-1),57%,0.89,21%,1,1,52%,  Ash ,  Mira ,16,Loss,Consulate
+  Redeemer ,1.22,23-16 (+7),3-0 (+3),79%,0.82,43%,1,0,35%,  Blackbeard ,  Lesion ,16,Loss,Consulate
+  Shuttle ,0.96,9-13 (-4),0-1 (-1),80%,0.6,13%,0,1,75%,  Lion ,  Mira ,11,Draw,Kafe
+  Skys ,0.63,7-12 (-5),1-4 (-3),40%,0.47,20%,0,1,71%,  Ash ,  Pulse ,11,Draw,Kafe
+  LaXInG ,1.2,14-11 (+3),1-1 (+0),67%,0.93,27%,1,0,29%,  Jackal ,  Mute ,11,Draw,Kafe
+  Chapstick ,0.73,7-12 (-5),1-3 (-2),53%,0.47,20%,0,1,43%,  Thermite ,  Smoke ,11,Draw,Kafe
+  England ,0.86,10-12 (-2),1-2 (-1),60%,0.67,20%,0,0,60%,  Glaz ,  Castle ,11,Draw,Kafe
+  Beastly ,0.98,9-8 (+1),1-1 (+0),67%,0.6,47%,0,0,33%,  Sledge ,  Castle ,12,Draw,Kafe
+  Vandal ,1.26,10-7 (+3),1-1 (+0),80%,0.67,53%,2,1,22%,  Ying ,  Smoke ,12,Draw,Kafe
+  Mark ,0.97,11-11 (+0),2-1 (+1),67%,0.73,27%,0,0,27%,  Lion ,  Lesion ,12,Draw,Kafe
+  Neptunez ,1.38,15-9 (+6),2-0 (+2),80%,1,40%,1,2,38%,  Hibana ,  Smoke ,12,Draw,Kafe
+  VertcL ,1.17,15-12 (+3),5-1 (+4),67%,1,20%,0,0,40%,  IQ ,  Caveira ,12,Draw,Kafe
